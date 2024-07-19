@@ -1,8 +1,11 @@
 <section>
-    <div>
-        <button>
-            <img src="" alt="">
-            <span>NAME</span>
-        </button>
-    </div>
+  <div>
+    <button>
+      <img
+        [src]="'assets/users/' + selectedUser.avatar"
+        [alt]="selectedUser.name"
+      />
+      <span>{{ selectedUser.name }}</span>
+    </button>
+  </div>
 </section>
