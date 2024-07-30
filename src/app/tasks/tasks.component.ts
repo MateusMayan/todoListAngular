@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { TaskComponent } from './task/task.component';
-import { Task } from './task/task.model';
 import { NewTaskComponent } from "./new-task/new-task.component";
 
 @Component({
@@ -51,7 +50,10 @@ export class TasksComponent {
   }
 
   onStartAddTask() {
-    this.isAddingTask = !this.isAddingTask;
+    this.isAddingTask = true;
   }
 
+  onCancelAddTask() {
+    this.isAddingTask = false;
+  }
 }
